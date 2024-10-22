@@ -16,41 +16,43 @@ import {
   ExitIcon,
 } from './styles';
 
+import YLogo from '/Users/luongtam/Documents/GitHub/twitter-ui-clone/src/styles/Y_Logo.png';
+
 import Button from '../Button';
 
 const MenuBar: React.FC = () => {
   return (
     <Container>
       <Topside>
-        <Logo />
+        <img src={YLogo} alt="YLogo" style={{ width: '35px', height: '30px', marginBottom: '30px', marginTop: '20px' }} />
 
         <MenuButton>
           <HomeIcon />
-          <span>Página Inicial</span>
+          <span>Home</span>
         </MenuButton>
 
         <MenuButton>
           <BellIcon />
-          <span>Notificações</span>
+          <span>Notification</span>
         </MenuButton>
 
         <MenuButton>
           <EmailIcon />
-          <span>Mensagens</span>
+          <span>Messages</span>
         </MenuButton>
 
         <MenuButton>
           <FavoriteIcon />
-          <span>Favoritados</span>
+          <span>Favourite</span>
         </MenuButton>
 
         <MenuButton className="active">
           <ProfileIcon />
-          <span>Perfil</span>
+          <span>Profile</span>
         </MenuButton>
 
         <Button>
-          <span>Tweetar</span>
+          <span>Post</span>
         </Button>
       </Topside>
 
@@ -58,7 +60,7 @@ const MenuBar: React.FC = () => {
         <Avatar />
 
         <ProfileData>
-          <strong>Lucas Bicalho</strong>
+          <strong style={{marginTop: '30px'}}>Lucas Bicalho</strong>
           <span>@lucas_bicalho</span>
         </ProfileData>
 
